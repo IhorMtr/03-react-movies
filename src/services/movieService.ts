@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { type Movie } from '../types/movies.ts';
+import { type Movie } from '../types/movie.ts';
 interface MoviesResponse {
   results: Movie[];
 }
