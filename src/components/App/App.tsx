@@ -48,13 +48,13 @@ export default function App() {
       <SearchBar onSubmit={handleSearch} />
       {isLoader && <Loader />}
       {isError && <ErrorMessage />}
-      <Toaster />
       {films.length !== 0 && (
         <MovieGrid onSelect={handleChoice} movies={films} />
       )}
       {selectedFilm && (
         <MovieModal movie={selectedFilm} onClose={handleClosing} />
       )}
+      <Toaster />
     </div>
   );
 }
